@@ -8,16 +8,16 @@ body {
 
 .sidebar {
     width: 250px;
-    height: 100vh; /* Full height of the viewport */
-    background: #444; /* Dark gray sidebar */
+    height: 100vh;
+    background: #444;
     color: white;
     padding: 20px;
-    position: fixed; /* Keeps the sidebar in place */
+    position: fixed;
     top: 0;
     left: 0;
 }
 
 .content {
-    margin-left: 260px; /* Space for the sidebar */
+    margin-left: 260px;
     padding: 20px;
 }
