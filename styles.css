@@ -1,10 +1,11 @@
-/* Apply a deep, rich dark purple gradient background */
-body {
-    background: linear-gradient(to bottom, #200030, #10001a); /* Darker, richer purple */
-    color: white;
-    font-family: Arial, sans-serif;
+/* Ensure full height and apply a deep, rich dark purple gradient */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #180024, #0c0012); /* Even darker and richer purple */
+    color: white;
+    font-family: Arial, sans-serif;
     display: flex;
 }
 
@@ -43,12 +44,13 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Main content area */
+/* Main content container */
 .main-content {
-    margin-left: 270px; /* Adjust to avoid overlap with sidebar */
+    flex: 1; /* Take up remaining space */
     padding: 20px;
-    width: calc(100% - 270px);
+    margin-left: 270px; /* Make space for sidebar */
     text-align: center;
+    min-height: 100vh; /* Ensure it covers full page */
 }
 
 /* Game container */
