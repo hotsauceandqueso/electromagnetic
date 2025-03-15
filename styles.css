@@ -14,9 +14,13 @@ html, body {
     flex: 1; /* Take up remaining space */
     padding: 20px;
     margin-left: 270px; /* Make space for sidebar */
-    text-align: center;
     min-height: 100vh; /* Ensure it covers full page */
     background: linear-gradient(to bottom, #180024, #0c0012); /* Same gradient as body for consistency */
+    
+    /* Flexbox to center title horizontally and vertically */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
 }
 
 /* Glass-like sidebar */
@@ -52,4 +56,11 @@ html, body {
 
 .sidebar a:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* Title styling */
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
 }
